@@ -1,0 +1,16 @@
+<%= form_for Event.new do |f| %>
+  <%= f.label :date %>
+  <%= f.date_select :date %>
+  <br>
+
+  <%= f.label :location %>
+  <%= f.text_field :location %>
+  <br>
+
+  <%= f.label :description %>
+  <%= f.text_area :description %>
+  <br>
+
+  <%= f.submit "Update Event" %>
+
+<% end %>
